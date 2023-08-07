@@ -20,8 +20,12 @@
     }
     .imgage{
         /* height: calc(100vh-6rem); */
-        min-height:calc(100vh - 25vh)
+        min-height:calc(100vh - 25vh);
+        background-size: cover;
+        background-repeat: no-repeat;
+        
     }
+
     
 </style>
 <!-- class -->
@@ -38,10 +42,10 @@
     }
   </script>
 </head>
-<body class="container mx-0  text-white  
+<body class=" border-green-950 border-2 overflow-x-hidden  snap-none w-full mx-auto  text-white  
     lato ">
-    <header >
-        <nav class="flex container  flex-col lg:flex-row lg:h-16   lg:px-10 items-center lg:mt-0.5 lg:mb-5 bg-primary-color rounded-full justify-between">
+    <header class="">
+        <nav class="flex container flex-col lg:flex-row lg:h-16   lg:px-10 items-center lg:mt-0.5 lg:mb-5 bg-primary-color rounded-full justify-between">
          <div class="flex gap-4 lg:gap-8 justify-center">
             <p>Home</p>
             <p>About us </p>
@@ -138,13 +142,13 @@
                   <a href="#slide1" class="btn btn-circle">❯</a>
                 </div>
               </div>
-            </div>
+            </div> 
           
         
     </header>
 
     <main>
-        <div class="relative  invisible lg:visible bg-white -mt-16 rounded-xl w-3/4 mx-auto ">      
+        <div class="relative  hidden lg:block bg-white -mt-16 rounded-xl w-3/4 mx-auto ">      
         <div class="flex  justify-around max-w[606px] max-h[250px] mx-auto   
         bg-white-100 shadow-lg shadow-cyan-500/50">
             <img src="./images/fruit1.png" alt="">
@@ -156,7 +160,7 @@
     </div>
 
    <!-- Deal  -->
-    <section class="flex flex-col lg:flex-row my-16 text-black justify-between">
+     <section class="flex flex-col lg:flex-row my-16 text-black justify-between">
         <div class="flex-1 ">
             <h1 class="text-3xl">Deal of the day</h1>
             <p>Contrary to popular belief, is not simply random text. It has roots in a <br>piece of classical Latin literature from 45 BC, making it over <br> 2000 years old.</p>
@@ -190,7 +194,7 @@
               </div>
         </div>
 
-    </section>
+    </section> 
 
 
     <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
