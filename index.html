@@ -1,11 +1,60 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="cupcake">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fruit Brust</title>
+    <!-- daisy -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+<!-- font -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+<!-- icon -->
+<script src="https://kit.fontawesome.com/9b5418d24c.js" crossorigin="anonymous"></script>
+<!-- style -->
+<style>
+    .lato{
+        font-family: 'Lato', sans-serif;
+    }
+</style>
+<!-- class -->
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+            'primary-color': '#F85559',
+          }
+        }
+      }
+    }
+  </script>
 </head>
-<body>
-    
+<body class="container text-white  
+   mx-auto lato ">
+    <header>
+        <nav class="flex container flex-col lg:flex-row lg:h-16   lg:px-10 items-center mt-10 bg-primary-color rounded-full justify-between">
+         <div class="flex gap-4 lg:gap-8 justify-center">
+            <p>Home</p>
+            <p>About us </p>
+            <p>Shop</p>
+            <p>All fruits</p>
+         </div>
+         <div class="flex gap-1">
+            <img class="w-10" src="images/logo.png" alt="">
+            <h3 class="text-2xl pt-[8px] font-bold">Fruit Brust</h3>
+         </div>
+        
+         <div>
+            
+            <input type="search" class="rounded-2xl pl-3"  placeholder="Search here " name="" id="">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            
+        </div>
+        </nav>
+    </header>
 </body>
 </html>
